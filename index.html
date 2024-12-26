@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Samarth Vittal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Pavan Samarth Vittal</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recommendations" id="recommendations-link">Recommendations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="profile">
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="./assets/circle.jpeg" alt="Pavan Samarth Vittal Profile Picture">
+            </div>
+            <div class="profile-details">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Pavan Samarth Vittal</h1>
+                <p class="section__text__p2">Software Engineer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/Pavan_resume.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="section-title">About Me</h1>
+        <!-- About Me Content -->
+        <div class="about-content-box">
+            <p>
+                Master’s Student in Software Engineering at Arizona State University. 
+                With 3 years of professional experience at KPMG Global Services and 2 internships, I specialize in Azure and Terraform.
+            </p>
+            <p>
+                I am skilled in automating deployments, optimizing resource utilization, and implementing scalable, cost-effective solutions. 
+                I also have a strong foundation in OOP, Data Structures, and Algorithms, and a passion for solving complex problems.
+            </p>
+        </div>
+        <!-- Education and Experience Section -->
+        <div class="about-grid">
+            <!-- Education Section -->
+            <div class="about-box">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>MS in Software Engineering</strong><br>
+                        Arizona State University<br>
+                        <em>May 2024 - May 2026 (Expected)</em>
+                    </li>
+                    <li>
+                        <strong>BTech in Computer Science and Engineering</strong><br>
+                        Visvesvaraya Technological University<br>
+                        <em>August 2017 - July 2021</em>
+                    </li>
+                </ul>
+            </div>
+            <!-- Experience Section -->
+            <div class="about-box">
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <strong><a href="https://kpmg.com/in/en/services/advisory/consulting/business-consulting/digital-engineering-and-quality/devops-consulting-services.html" target="_blank">Cloud Software Engineer</a></strong><br>
+                        KPMG Global Services<br>
+                        <em>August 2021 - July 2024</em>
+                    </li>
+                    <li>
+                        <strong><a href="https://machinemaze.com/" target="_blank">Software Engineer Intern</a></strong><br>
+                        MachineMaze<br>
+                        <em>April 2nd - August 19th, 2021</em>
+                    </li>
+                    <li>
+                        <strong><a href="https://www.agilepoint.com/" target="_blank">Software Engineer Intern</a></strong><br>
+                        AgilePoint Inc.<br>
+                        <em>March 1st - April 1st, 2021</em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="recommendations" class="hidden">
+        <div class="recommendations-header">
+            <h1>Recommendations</h1>
+            <p>
+                I am deeply grateful for the feedback and recommendations shared by my colleagues and mentors. 
+                Their words reflect the collaborative and impactful experiences we've shared. 
+            </p>
+            <a href="https://www.linkedin.com/in/pavan-samarth/details/recommendations/?detailScreenTabIndex=0" 
+               target="_blank" class="linkedin-link">View Recommendations on LinkedIn</a>
+        </div>
+        <div class="recommendation-extended-container">
+            <div class="recommendation-card">
+                <h3>Divya Shetty</h3>
+                <p>Assistant Manager | Cloud Engineering | Automating Infrastructure, CICD | AWS, Azure</p>
+                <p class="recommendation-date">August 4, 2024</p>
+                <p class="recommendation-text">
+                    Joining our team as a fresh graduate, Pavan demonstrated remarkable growth and potential, quickly becoming a key contributor. He developed a strong understanding of cloud platforms such as Azure and made significant contributions to our DevOps processes. Notably, Pavan excelled in stakeholder communication and his proactive attitude and willingness to tackle challenges had a substantial impact on our team's success. I highly recommend Pavan for any cloud and DevOps role, he will undoubtedly be a valuable asset to any team.
+                </p>
+                <a href="https://www.linkedin.com/in/divyashetty3092/" target="_blank" class="linkedin-link">View LinkedIn Profile</a>
+            </div>
+            <div class="recommendation-card">
+                <h3>Prajwal Madhyastha</h3>
+                <p>Cloud Engineering | KPMG</p>
+                <p class="recommendation-date">July 30, 2024</p>
+                <p class="recommendation-text">
+                    I have had the pleasure of working with Pavan for over two and a half years, during which time he has consistently impressed me with his technical skills, dedication, and growth mindset. His positive attitude and collaborative spirit make him a pleasure to work with.
+                </p>
+                <a href="https://www.linkedin.com/in/prajwal-madhyastha-a205a5ba/" target="_blank" class="linkedin-link">View LinkedIn Profile</a>
+            </div>
+            <div class="recommendation-card">
+                <h3>Sudhanshu Kumar</h3>
+                <p>Senior DevOps Engineer at KPMG UK</p>
+                <p class="recommendation-date">July 29, 2024</p>
+                <p class="recommendation-text">
+                    Pavan's ability to take independent charge of complex projects and drive them to successful completion is truly impressive. His dedication, coupled with his proactive attitude and willingness to go the extra mile, ensures that he always delivers high-quality results.
+                </p>
+                <a href="https://www.linkedin.com/in/sudhanshu-kumar-5604ab224/" target="_blank" class="linkedin-link">View LinkedIn Profile</a>
+            </div>
+            <div class="recommendation-card">
+                <h3>Manisha Naik</h3>
+                <p>AWS/Azure DevOps Engineer | Agile Project Management | FinOps</p>
+                <p class="recommendation-date">July 27, 2024</p>
+                <p class="recommendation-text">
+                    It's not often that you come across someone who is both creative and determined, but that's exactly what you'll find in Pavan. I am glad to have worked with him and highly recommend him to potential employers.
+                </p>
+                <a href="https://www.linkedin.com/in/manisha-naik-09b69215a/" target="_blank" class="linkedin-link">View LinkedIn Profile</a>
+            </div>
+            <div class="recommendation-card">
+                <h3>Nadia Rowbotham</h3>
+                <p>Senior DevOps Engineer</p>
+                <p class="recommendation-date">July 24, 2024</p>
+                <p class="recommendation-text">
+                    Pavan is a skilled DevOps engineer with expertise in Terraform, CI/CD, and Azure. Pavan's technical skills, work ethic, and ability to teach make him an invaluable asset to any team.
+                </p>
+                <a href="https://www.linkedin.com/in/nadiarowbotham/" target="_blank" class="linkedin-link">View LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h1 class="section-title">Get in Touch</h1>
+        <div class="contact-container">
+            <div class="contact-item">
+                <img src="./assets/email.png" alt="Email Icon">
+                <p><a href="mailto:pbelegur@asu.edu">pbelegur@asu.edu</a></p>
+            </div>
+            <div class="contact-item">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon">
+                <p><a href="https://www.linkedin.com/in/pavan-samarth/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
