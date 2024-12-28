@@ -11,21 +11,18 @@ document.getElementById("recommendations-link").addEventListener("click", functi
     }
 });
 
-function scrollToNextSection(currentSectionId) {
-    const currentSection = document.getElementById(currentSectionId);
-    if (currentSection) {
-        let nextSection = currentSection.nextElementSibling;
-        while (nextSection && !nextSection.classList.contains('section')) {
-            nextSection = nextSection.nextElementSibling;
-        }
-        if (nextSection) {
-            nextSection.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            console.log('No more sections to scroll to.');
-        }
+function scrollToSection(sectionId) {
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+        const navBarHeight = document.querySelector("nav")?.offsetHeight || 0; // Adjust for sticky navigation bar height
+        const sectionTop = targetSection.getBoundingClientRect().top + window.pageYOffset - navBarHeight;
+
+        window.scrollTo({
+            top: sectionTop,
+            behavior: "smooth", // Smooth scrolling for a better experience
+        });
     } else {
-        console.error(`Section with id "${currentSectionId}" not found.`);
+        console.error(`Section with id "${sectionId}" not found.`);
     }
 }
-
 
