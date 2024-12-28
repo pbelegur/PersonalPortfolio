@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Personal Portfolio</div>
+        <div class="logo">Welcome</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Skills</a></li>
@@ -18,7 +18,7 @@
         </ul>
     </nav>
 
-    <section id="profile">
+    <section id="profile" class="section">
         <div class="profile-container">
             <div class="profile-photo">
                 <img src="./assets/circle.jpeg" alt="Pavan Samarth Vittal Profile Picture">
@@ -33,64 +33,80 @@
                 </div>
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="icon arrow"
+            onclick="location.href='#about'" class="icon arrow">
     </section>
 
-    <section id="about">
-        <h1 class="section-title">About Me</h1>
-        <!-- About Me Content -->
-        <div class="about-content-box">
-            <p>
-                Master’s Student in Software Engineering at Arizona State University. 
-                With 3 years of professional experience at KPMG Global Services and 2 internships, I specialize in Azure and Terraform.
-            </p>
-            <p>
-                I am skilled in automating deployments, optimizing resource utilization, and implementing scalable, cost-effective solutions. 
-                I also have a strong foundation in OOP, Data Structures, and Algorithms, and a passion for solving complex problems.
-            </p>
+<!-- About Me Section -->
+<section id="about" class="section">
+    <h1 class="section-title">About Me</h1>
+    <div class="about-content-box">
+        <p>
+            I am a Master’s Student in Software Engineering at Arizona State University. 
+            With 3 years of professional experience at KPMG Global Services and 2 internships, I specialize in Cloud and Software Engineering.
+        </p>
+        <p>
+            I am skilled in automating deployments, optimizing resource utilization, and implementing scalable, cost-effective solutions. 
+            I also have a strong foundation in OOP, Data Structures, and Algorithms, and a passion for solving complex problems.
+        </p>
+    </div>
+    <img src="./assets/arrow.png" alt="icon arrow"
+        onclick="location.href='#education-experience'" class="icon arrow">
+    </button>
+
+</section>
+
+<!-- Education and Experience Section -->
+<section id="education-experience" class="section">
+    <h1 class="section-title">Education & Experience</h1>
+    <div class="edu-exp-container">
+        <!-- Education Section -->
+        <div class="about-box education">
+            <h2>🎓 Education</h2>
+            <ul>
+                <li>
+                    <strong>MS in Software Engineering</strong><br>
+                    Arizona State University<br>
+                    <em>May 2024 - May 2026 (Expected)</em>
+                </li>
+                <li>
+                    <strong>BTech in Computer Science and Engineering</strong><br>
+                    Visvesvaraya Technological University<br>
+                    <em>August 2017 - July 2021</em>
+                </li>
+            </ul>
         </div>
-        <!-- Education and Experience Section -->
-        <div class="about-grid">
-            <!-- Education Section -->
-            <div class="about-box education">
-                <h2>🎓 Education</h2>
-                <ul>
-                    <li>
-                        <strong>MS in Software Engineering</strong><br>
-                        Arizona State University<br>
-                        <em>May 2024 - May 2026 (Expected)</em>
-                    </li>
-                    <li>
-                        <strong>BTech in Computer Science and Engineering</strong><br>
-                        Visvesvaraya Technological University<br>
-                        <em>August 2017 - July 2021</em>
-                    </li>
-                </ul>
-            </div>
-            <!-- Experience Section -->
-            <div class="about-box experience">
-                <h2>💼 Experience</h2>
-                <ul>
-                    <li>
-                        <strong><a href="https://kpmg.com/in/en/services/advisory/consulting/business-consulting/digital-engineering-and-quality/devops-consulting-services.html" target="_blank">Cloud Software Engineer</a></strong><br>
-                        KPMG Global Services<br>
-                        <em>August 2021 - July 2024</em>
-                    </li>
-                    <li>
-                        <strong><a href="https://machinemaze.com/" target="_blank">Software Engineer Intern</a></strong><br>
-                        MachineMaze<br>
-                        <em>April 2nd - August 19th, 2021</em>
-                    </li>
-                    <li>
-                        <strong><a href="https://www.agilepoint.com/" target="_blank">Software Engineer Intern</a></strong><br>
-                        AgilePoint Inc.<br>
-                        <em>March 1st - April 1st, 2021</em>
-                    </li>
-                </ul>
-            </div>
+        <!-- Experience Section -->
+        <div class="about-box experience">
+            <h2>💼 Experience</h2>
+            <ul>
+                <li>
+                    <strong>Cloud Software Engineer</strong><br>
+                    <a href="https://kpmg.com/in/en/services/advisory/consulting/business-consulting/digital-engineering-and-quality/devops-consulting-services.html" target="_blank">KPMG Global Services</a><br>
+                    <em>August 2021 - July 2024</em>
+                </li>
+                <li>
+                    <strong>Software Engineer Intern</strong><br>
+                    <a href="https://machinemaze.com/" target="_blank">MachineMaze</a><br>
+                    <em>April 2nd - August 19th, 2021</em>
+                </li>
+                <li>
+                    <strong>Software Engineer Intern</strong><br>
+                    <a href="https://www.agilepoint.com/" target="_blank">AgilePoint Inc.</a><br>
+                    <em>March 1st - April 1st, 2021</em>
+                </li>
+            </ul>
         </div>
-    </section>    
-    <section id="experience">
-        <p class="section__text__p1">What skills i know?</p>
+    </div>
+    <!-- Move button outside the edu-exp-container -->
+    <img src="./assets/arrow.png" alt="icon arrow"
+        onclick="location.href='#experience'" class="icon arrow">
+</section>
+
+
+    <section id="experience" class="section">
+        <!-- <p class="section__text__p1">Cool Stuff I have learnt till now</p> -->
+        <h1 class="section-title">Skills</h1>
         <div class="experience-details-container">
             <!-- Programming Languages -->
             <div class="details-container">
@@ -180,12 +196,12 @@
                     </article>
                 </div>
             </div>
+            <img src="./assets/arrow.png" alt="icon arrow"
+                onclick="location.href='#projects'" class="icon-arrow-skills">
         </div>
-        <img src="./assets/arrow.png" alt="icon arrow"
-        onclick="location.href='./#projects'" class="icon arrow">
     </section>
     
-    <section id="projects">
+    <section id="projects" class="section">
         <p class="section__text__p1">Browse My Recent Projects</p>
         <div class="projects-container">
             <!-- Project 1 -->
@@ -197,14 +213,14 @@
                         class="project-img"
                     />
                 </div>
-                <h2 class="project-title">Taiga-Based Scrum Metric Calculator</h2>
+                <h2 class="project-title">
+                    <a href="https://github.com/SER515asu/ser515-maroons-404" target="_blank">
+                        Taiga-Based Scrum Metric Calculator
+                    </a>
+                </h2>
                 <p class="project-description">
                     A comprehensive metric calculator for Scrum teams using Taiga. Helps improve team performance and collaboration.
                 </p>
-                <button class="btn btn-color-2 project-btn"
-                    onclick="window.open('https://github.com/SER515asu/ser515-maroons-404')">
-                    GitHub
-                </button>
             </div>
             <!-- Project 2 -->
             <div class="project-card">
@@ -215,16 +231,18 @@
                         class="project-img"
                     />
                 </div>
-                <h2 class="project-title">ArtTrack: Art Discovery and Management</h2>
+                <h2 class="project-title">
+                    <a href="https://github.com/rachitkulkarni9/artTrack_Team15" target="_blank">
+                        ArtTrack: Art Discovery and Management
+                    </a>
+                </h2>
                 <p class="project-description">
                     An innovative platform for discovering, tracking, and managing artworks. Supports seamless collaboration for art enthusiasts.
                 </p>
-                <button class="btn btn-color-2 project-btn"
-                    onclick="window.open('https://github.com/rachitkulkarni9/artTrack_Team15')">
-                    GitHub
-                </button>
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="icon arrow"
+            onclick="location.href='#contact'" class="icon arrow">
     </section>
     
 
@@ -285,9 +303,11 @@
                 <a href="https://www.linkedin.com/in/nadiarowbotham/" target="_blank" class="linkedin-link">View LinkedIn Profile</a>
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="icon arrow"
+            onclick="location.href='#contact'" class="icon arrow">
     </section>
     
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="section-title">Get in Touch</h1>
         <div class="contact-container">
             <div class="contact-item">

@@ -66,6 +66,14 @@ nav {
     margin-bottom: 10px;
 }
 
+.section-title {
+    font-size: 2.5rem; /* Same font size as Education & Experience */
+    font-weight: bold; /* Ensure boldness matches */
+    color: #333; /* Same color for all titles */
+    text-align: center; /* Center alignment */
+    margin-bottom: 20px;
+}
+
 .profile-details h1.title {
     font-size: 3.5em;
     margin: 10px 0;
@@ -144,22 +152,34 @@ nav {
 
 /* Education and Experience Boxes */
 .about-box {
+    flex: 1; /* Equal size for both boxes */
     background: #ffffff;
-    padding: 30px; /* Increased padding */
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Wider box for rectangle shape */
-    flex: 1 1 calc(45% - 30px);
-    min-height: 250px; /* Taller box for rectangle shape */
-    text-align: left;
 }
 
 .about-box h2 {
-    font-size: 2em; /* Larger heading */
+    font-size: 1.8em;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
+}
+
+.experience-section {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns the box and button vertically */
+    justify-content: flex-start; /* Aligns items to the left */
+    position: relative; /* Ensures the button is positioned relative to the container */
+}
+
+.edu-exp-container {
+    display: flex; /* Align education and experience side by side */
+    align-items: flex-start; /* Align at the top */
+    gap: 20px; /* Remove space between the boxes */
+    position: relative; /* For placing the button properly */
+    margin-right: 60px;
 }
 
 .about-box ul {
@@ -228,18 +248,18 @@ nav {
 .experience-details-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+    gap: 20px; /* Space between boxes */
+    position: relative; /* Ensures the arrow is positioned relative to this container */
+    padding-right: 60px; /* Space for the arrow on the right */
 }
 
 .details-container {
-    background: #fff;
+    flex: 1 1 calc(25% - 20px); /* Adjusts size to fit the layout */
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    flex: 1 1 calc(25% - 30px); /* Responsive sizing */
+    position: relative;
 }
 
 .experience-sub-title {
@@ -562,4 +582,75 @@ footer {
     background: #333;
     color: white;
     font-size: 0.9em;
+}
+
+/* General section styling */
+.section {
+    position: relative; /* Allows absolute positioning of the button within the section */
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Arrow button styling */
+.next-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Arrow image styling */
+.next-btn img {
+    width: 30px; /* Adjusts the size of the arrow */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.next-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Hidden sections */
+.hidden {
+    display: none; /* Hides sections not currently visible */
+}
+
+.icon.arrow {
+    position: absolute;
+    top: 50%; /* Vertically centers the arrow */
+    right: 20px; /* Places it slightly away from the right edge */
+    transform: translateY(-50%); /* Centers the arrow vertically */
+    width: 40px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon.arrow:hover {
+    transform: translateY(-50%) scale(1.1); /* Adds a hover zoom effect */
+}
+
+.section {
+    position: relative; /* Ensures the arrow is positioned relative to its section */
+}
+
+.icon-arrow-skills {
+    position: absolute;
+    top: 35%; /* Adjust this value to move it up */
+    right: 0; /* Keep it aligned to the right edge */
+    transform: translate(50%, -50%); /* Center it vertically while keeping it positioned correctly */
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon-arrow-skills:hover {
+    transform: translate(50%, -50%) scale(1.1); /* Adds a hover effect */
 }
